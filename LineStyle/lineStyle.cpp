@@ -8,7 +8,7 @@ using namespace std;
 int gd = 0, gm;
 int main() {
     initgraph(&gd, &gm, "..\bgi");
-    initwindow(700,700)
+    initwindow(700,700);
     int count = 0;
     int lineY = 0;
     while (!kbhit()) {

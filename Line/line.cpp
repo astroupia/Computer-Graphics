@@ -30,7 +30,7 @@ int main() {
         moveto(50+increment, 50);
         lineto(10+increment, 50);
         increment++;
-        putpixel(rand()%640, rand()%420, GREEN);
+        //putpixel(rand()%640, rand()%420, GREEN);
     }
     getch();
     return 0;
