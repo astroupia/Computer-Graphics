@@ -45,6 +45,39 @@ int main() {
                 count++;
             }
     }
+    void rectangleMotion(int count) {
+    cleardevice();
+    count = 0;
+    while (!kbhit()) {
+            setcolor(RED);
+            setfillstyle(2, RED);
+            rectangle(10+count, 10, 300+count, 300);
+            floodfill(11+count, 11, RED);
+            delay(10);
+            setcolor(BLACK);
+            setfillstyle(2, BLACK);
+            rectangle(10+count, 10, 300+count, 300);
+            floodfill(11+count, 11, BLACK);
+            count++;
+        }
+}
+
+void circleMotion(int count) {
+    cleardevice();
+    count = 0;
+    while (!kbhit()) {
+            setcolor(RED);
+            setfillstyle(2, RED);
+            circle(100+count, 100+count, 30);
+            floodfill(101+count, 101+count, RED);
+            delay(10);
+            setcolor(BLACK);
+            setfillstyle(2, BLACK);
+            circle(100+count, 100+count, 30);
+            floodfill(101+count, 101+count, BLACK);
+            count++;
+        }
+}
     getch();
     closegraph();
     return 0;
